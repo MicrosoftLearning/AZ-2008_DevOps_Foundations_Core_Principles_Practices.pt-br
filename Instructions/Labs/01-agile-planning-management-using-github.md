@@ -42,7 +42,7 @@ O exercício é composto pelas seguintes tarefas:
 1. Na página **Criar um novo repositório**, execute as seguintes ações:
 
    - Na lista suspensa **Proprietário**, selecione o nome da conta de usuário do GitHub.
-   - Na caixa de texto **Nome do repositório**, insira **DevOpsCoreIntroRepo**.
+   - Na caixa de texto **Nome do repositório**, insira **`DevOpsCoreIntroRepo`**.
    - Altere a visibilidade do repositório para **Privado**.
    - Habilite a caixa de seleção **Adicionar um arquivo README**.
    - Na lista suspensa **Adicionar .gitignore**, selecione **Visual Studio**.
@@ -65,15 +65,15 @@ O exercício é composto pelas seguintes tarefas:
 1. Na página **Marcos de Referência**, selecione **Novo marco de referência**.
 1. Na página **Novo marco de referência**, execute as seguintes ações:
 
-   - Na caixa de texto **Título**, insira **versão alfa**.
+   - Na caixa de texto **Título**, insira **`alpha release`**.
    - Na caixa de texto **Data de conclusão (opcional)**, insira uma data uma semana após a data atual.
-   - Na caixa de texto **Descrição**, insira **Conclusão da versão alfa**.
+   - Insira **`Completion of the alpha release`** na caixa de texto descrição **Descrição**.
 
 1. Selecione **Criar marco de referência**.
-1. Repita as últimas três etapas para criar um marco de referência de **versão beta** com a data de conclusão duas semanas após a data atual. Na caixa de texto **Descrição**, insira **Conclusão da versão beta**.
+1. Repita as últimas três etapas para criar um marco de referência de **versão beta** com a data de conclusão duas semanas após a data atual. Insira **`Completion of the beta release`** na caixa de texto **Descrição**.
 1. Navegue de volta para a página **Problemas** e selecione **Novo problema**.
-1. Na caixa de texto **Adicionar um título**, insira **A página README do repositório está vazia**.
-1. Na caixa de texto **Adicionar uma descrição**, insira **A brevidade pode ser uma virtude, mas essa página README seria realmente melhor se tivesse um texto**.
+1. Na caixa de texto **Adicionar título**, insira **`Repo README page is empty`**.
+1. Na caiax de texto **Adicionar descrição**, insira **`Brevity might be a virtue, but this README page can really use some text`**.
 1. Selecione o ícone de engrenagem ao lado da entrada **Marco de Referência** e, na lista suspensa, selecione **versão alfa**.
 1. Selecione o ícone de engrenagem ao lado da entrada **Rótulos** e, na lista suspensa, selecione **bug**.
 1. Selecione **Enviar novo problema**. Observe que o **n.º 1** foi atribuído ao problema automaticamente.
@@ -87,8 +87,8 @@ O exercício é composto pelas seguintes tarefas:
    > **Observação:** alternativamente, você pode começar do zero e exibir o projeto no formato de tabela, quadro ou roteiro.
 
 1. Na página do novo projeto, selecione o nome do projeto gerado automaticamente. Isso exibirá automaticamente a página **Configurações do Projeto**.
-1. Na caixa de texto **Nome do Projeto**, insira **Projeto de Introdução de Itens Básicos do DevOps**.
-1. Na caixa de texto **Descrição curta**, insira **Introdução aos Projetos do GitHub** e selecione **Salvar**.
+1. Na caixa de texto **Nome do projeto**, insira **`DevOps Core Intro Project`**.
+1. Na caixa de texto **Descrição curta**, insira **`Introduction to GitHub Projects`** e clique em **Salvar**.
 1. Na seção **README**, insira o texto a seguir
 
    > **Observação:** a seção **README** inclui um editor de Markdown simplificado que ajuda você a criar uma página README visualmente atraente para o projeto. Você pode usar os ícones da barra de ferramentas para formatar o texto e usar a guia **Visualização** para revisar as alterações resultantes. Copie e cole o seguinte texto na seção README do editor:
@@ -125,12 +125,12 @@ O exercício é composto pelas seguintes tarefas:
    > **Observação:** esse layout representa um quadro Kanban muito básico. Em cada coluna, você pode adicionar itens individuais. Você também pode adicionar colunas extras.
 
 1. Para adicionar uma coluna extra, selecione o ícone **+** à direita da coluna**Concluídos** e, a seguir, selecione **+ Nova Coluna**.
-1. Na janela **Nova opção**, na caixa de texto **Texto de Rótulo**, insira **Revisar Em Andamento** e selecione uma cor que você queira atribuir à coluna. Na caixa de texto **Descrição**, insira **Este item está sendo revisado** e selecione **Salvar**.
+1. Na janela **Nova opção**, na caixa de texto **Texto de rótulo**, insira **`Review In Progress`** e selecione uma cor que você queira atribuir à coluna. Na caixa de texto **Descrição**, insira **`This item is being reviewed`** e clique em **Salvar**.
 1. Selecione o pequeno círculo ao lado do rótulo **Revisão em Andamento** da coluna recém-adicionada e use-o para arrastá-lo entre a coluna **Em Andamento** e a coluna **Concluídos**.
 
 ## Exercício 2: criar e gerenciar itens do quadro de projetos
 
-Neste exercício, você vai criará e gerenciar itens do quadro de projetos
+Neste exercício, você vai criar e gerenciar itens do quadro de projetos
 
 > **Observação:** existem duas maneiras básicas de adicionar itens a um quadro de projeto. Você pode criar um rascunho de item ou adicionar um item que represente um problema existente em um repositório GitHub.
 
@@ -146,11 +146,11 @@ O exercício é composto pelas seguintes tarefas:
 
    > **Observação:** Na caixa de texto exibida automaticamente, você pode começar a digitar para criar um rascunho ou digitar **#** para mencionar um problema existente em qualquer repositório do GitHub. Começaremos com a primeira dessas duas técnicas.
 
-1. Na caixa de texto, insira **Wiki ausente** e pressione **Enter** no teclado. Isso adicionará um novo rascunho de item à coluna **Pendentes**.
+1. Na caixa de texto, insira **`Missing Wiki`** and e pressione **Enter** no teclado. Isso adicionará um novo rascunho de item à coluna **Pendentes**.
 1. No rascunho de item recém-adicionado, selecione o símbolo de reticências e, no menu suspenso, selecione **Converter em um problema**.
 1. Na lista suspensa **Selecionar um item**, selecione **DevOpsCoreIntroRepo** para adicionar o item ao repositório criado no exercício anterior. Observe que o problema foi rotulado automaticamente com **n.° 2**.
 1. Selecione o problema **Wiki ausente**.
-1. No painel **Wiki ausente n.º 2**, observe que você tem configurações adicionais disponíveis nesta altura, incluindo rótulos e marcos de referência.
+1. No painel **Wiki ausente n.º 2**, observe que você tem outras configurações disponíveis nesta altura, incluindo rótulos e marcos de referência.
 1. Selecione **Adicionar rótulos** e, na lista suspensa **Selecionar itens**, selecione **aprimoramento**.
 1. Selecione **Adicionar marco de referência** e, na lista suspensa **Selecionar um item**, selecione **versão alfa**.
 1. Feche o painel **Wiki ausente n.º 2**.
@@ -158,7 +158,8 @@ O exercício é composto pelas seguintes tarefas:
    > **Observação:** Agora, você vai adicionar outro rascunho de item e convertê-lo em um problema.
 
 1. Na página **Projeto de Introdução de Itens Básicos do DevOps**, na coluna **Pendentes**, selecione **+ Adicionar item**.
-1. Na caixa de texto, insira **Colaboradores adicionais necessários** e pressione **Enter** no teclado. Isso adicionará um novo rascunho de item à coluna **Pendentes**.
+1. Na caixa de texto, insira **`Additional collaborators needed`** e pressione **Enter** no teclado. Isso adicionará um novo rascunho de item à coluna **Pendentes**.
+1. No rascunho de item recém-adicionado, clique no símbolo de reticências; no menu suspenso, clique em **Converter em um problema** e selecione **DevOpsCoreIntroRepo** para adicionar o item ao repositório.
 
 ### Tarefa 2: Adicionar um item baseado em um problema
 
@@ -199,7 +200,7 @@ O exercício é composto pelas seguintes tarefas:
 1. Observe que o encerramento do item resultou nas seguintes ações:
 
    - O status do item foi alterado automaticamente para **Concluído**, conforme indicado por um comentário extra informando que o bot **github-project-automation** migrou o item de **Em andamento** para **Concluídos** no**Projeto de Introdução de Itens Básicos do DevOps**.
-   - O marco de referência **versão alfa** foi marcado como concluído, conforme indicado pela barra horizontal verde na seção **Marco de referência** da página.
+   - O marco de referência **versão alfa** foi marcado como 50% concluído, conforme indicado pela barra horizontal verde na seção **Marco de referência** da página.
 
    > **Observação:** Caso não esteja vendo as alterações, atualize a página.
 

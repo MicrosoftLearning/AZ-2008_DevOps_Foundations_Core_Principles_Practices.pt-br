@@ -77,8 +77,8 @@ O exercício é composto pelas seguintes tarefas:
 
 1. Na página **Spoon-Knife** com fork, selecione a guia **Problemas**.
 1. Na página **Boas-vindas aos problemas!**, selecione **Novo problema**.
-1. Na caixa de texto **Adicionar um título**, insira **o index.html parece bem simples**.
-1. Na caixa de texto **Adicionar uma descrição**, insira **o arquivo index.html precisa de um toque moderno**.
+1. Na caixa de texto **Adicionar título**, insira **`index.html looks rather austere`**.
+1. Na caixa de texto **Adicionar descrição**, insira **`index.html file can use a modern touch`**.
 1. No painel atual, na seção Destinatários, selecione **Adicionar destinatários…** e, na seção **Sugestões**, escolha o nome de usuário do GitHub.
 1. Selecione o ícone de engrenagem ao lado da entrada **Rótulos** e, na lista suspensa, selecione **aprimoramento**.
 1. Selecione o ícone de engrenagem ao lado da entrada **Projetos** e, na lista suspensa, escolha **Projeto de Introdução do DevOps Core**.
@@ -92,7 +92,7 @@ O exercício é composto pelas seguintes tarefas:
 
 1. Volte à guia **Código**.
 1. No canto superior esquerdo da página, selecione a entrada **principal** para exibir a lista suspensa **Alternar branches/tags**.
-1. Na caixa de texto **Localizar ou criar um branch…**, insira **atualizar index.html** e selecione a entrada **Criar branch: atualizar index.html por meio de 'principal'** para criar um branch.
+1. Na caixa de texto **Localizar ou criar um branch…**, insira **`update index.html`** e selecione a entrada **Criar branch: atualizar index.html por meio de 'principal'** para criar um branch.
 
    > **Observação:** Isso fará com que o branch recém-criado seja automaticamente o atual, conforme indicado pelo conteúdo da lista suspensa.
 
@@ -113,7 +113,7 @@ O exercício é composto pelas seguintes tarefas:
    ```
 
 1. No canto superior direito da página do editor, selecione **Fazer commit das alterações…**.
-1. Na janela **Fazer commit das alterações**, na caixa de texto **Descrição estendida**, insira **Modificação do texto do parágrafo e da imagem**, aceite a mensagem de commit padrão e selecione **Fazer commit das alterações**.
+1. Na janela **Fazer commit das alterações**, na caixa de texto **Descrição estendida**, insira **`Modified the image and paragraph text`**, aceite a mensagem de commit padrão e clique em **Fazer commit das alterações**.
 
    > **Observação:** Neste momento, você também tem a opção de criar um branch para o commit.
 
@@ -140,7 +140,7 @@ O exercício é composto pelas seguintes tarefas:
    ```
 
 1. No canto superior direito da página do editor, selecione **Fazer commit das alterações…**.
-1. Na janela **Fazer commit das alterações**, na caixa de texto **Descrição estendida**, insira **Modificação de seletores e tags CSS**, aceite a mensagem de commit padrão e selecione **Fazer commit das alterações** para fazer commit das alterações no branch update-index.html.
+1. Na janela **Fazer commit das alterações**, na caixa de texto **Descrição estendida**, insira **`Modified CSS tags and selectors`**, aceite a mensagem de commit padrão e clique em **Fazer commit das alterações** para fazer commit das alterações no branch update-index.html.
 
 ### Tarefa 6: Criar e mesclar uma pull request
 
@@ -164,7 +164,7 @@ O exercício é composto pelas seguintes tarefas:
 
    1. Leia o resumo gerado pelo recurso GitHub Copilot para pull request.
 
-   1. Depois que o resumo for gerado, insira **Resolução nº 1** na página **Adicionar uma descrição** na primeira linha e escolha **Criar pull request**.
+   1. Depois que o resumo for gerado, insira **`Addressing #1`** em **Adicionar uma descrição** na primeira linha e clique em **Criar pull request**.
 
        ![Resumo do GitHub Copilot](media/github-pull-request-copilot-summary.png)
 
@@ -172,7 +172,7 @@ O exercício é composto pelas seguintes tarefas:
 
    > **Observação:** se você optar por usar o recurso GitHub Copilot para pull request, ignore a próxima etapa.
 
-1. Na caixa de texto **Adicionar uma descrição**, insira **Resolução nº 1** e escolha **Criar pull request**.
+1. Na caixa de texto **Adicionar descrição** insira **`Addressing #1`** e clique em **Criar pull request**.
 
    > **Observação:** Ao incluir **nº 1**, você poderá referenciar o primeiro problema associado a essa pull request.
 
