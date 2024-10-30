@@ -40,7 +40,7 @@ Neste laboratório, você vai:
 
 1. Inicie um navegador da Web e navegue até o portal do Azure em `https://portal.azure.com`.
 1. Se solicitado, entre usando sua conta do Microsoft Entra ID com o acesso do Proprietário à assinatura do Azure usada no laboratório anterior.
-1. Na guia navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **Assinaturas** e, na lista de resultados, selecione **Assinaturas**.
+1. Na guia navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **`Subscriptions`** e, na lista de resultados, selecione **Assinaturas**.
 1. Na página assinaturas, no menu vertical à esquerda, selecione **Provedores de recursos**.
 1. Na lista de provedores de recursos, pesquise e selecione **Microsoft.Chaos**.
 1. Com o provedor de recursos **Microsoft.Chaos** selecionado, na barra de ferramentas, selecione **Registrar**.
@@ -60,11 +60,11 @@ O exercício é composto pelas seguintes tarefas:
 
 ### Tarefa 1: Implementar um perfil do Gerenciador de Tráfego
 
-1. Na guia navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **perfis do Gerenciador de Tráfego** e, na lista de resultados, selecione **perfis do Gerenciador de Tráfego**.
+1. Na guia navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **`Traffic Manager profiles`** e, na lista de resultados, selecione **perfis do Gerenciador de Tráfego**.
 1. Na página **Balanceamento de Carga \| Gerenciador de Tráfego**, selecione **+ Criar**.
 1. Na página **Criar perfil do Gerenciador de Tráfego**, execute as seguintes ações:
 
-   - Na caixa de texto **Nome**, insira **devopsfoundationstmprofile**.
+   - Na caixa de texto **Nome**, insira **`devopsfoundationstmprofile`**.
 
        > **Observação:** O nome do perfil do Gerenciador de Tráfego deve ser globalmente exclusivo. Se você receber uma mensagem de erro indicando que o nome já está em uso, tente um nome diferente e registre-o. Você vai precisar dele durante este laboratório.
 
@@ -73,7 +73,7 @@ O exercício é composto pelas seguintes tarefas:
    > **Observação:** Escolhemos o método de roteamento de prioridade para refletir a suposição um tanto arbitrária de que todas as solicitações devem ser tratadas pelo aplicativo Web do Serviço de Aplicativo do Azure no Leste dos EUA.
 
    - Verifique se sua assinatura do **Azure aparece na lista suspensa assinatura**
-   - Selecione o link **Criar novo** abaixo da lista suspensa **Grupo de Recursos**, na caixa de texto **Nome**, insira **devops-foundations-rg**e selecione **OK**.
+   - Clique no link **Criar novo** abaixo da lista suspensa **Grupo de Recursos**; na caixa de texto **Nome**, insira **`rg-devops-foundations`** e clique em **OK**.
    - Na lista suspensa **Local do grupo de recursos**, selecione a mesma região do Azure escolhida nos laboratórios anteriores deste curso.
 
 1. Selecione **Criar** para iniciar o processo de provisionamento.
@@ -102,7 +102,7 @@ O exercício é composto pelas seguintes tarefas:
 1. No painel **Adicionar ponto de extremidade**, execute as seguintes ações:
 
    - Verifique se **ponto de extremidade do Azure** aparece na lista suspensa **Tipo**.
-   - Na caixa de texto **Nome**, insira **aplicativo Web DevOps Foundations – Leste dos EUA**.
+   - Na caixa de texto **Nome**, insira **`DevOps Foundations web app - East US`**.
    - Verifique se a caixa de seleção **Habilitar Ponto de Extremidade** está selecionada.
    - Na lista suspensa **Tipo de recurso de destino**, selecione **Serviço de Aplicativo**.
    - Na lista suspensa **Recurso de destino**, na seção **rg-eshoponweb-eastus**, selecione o nome do aplicativo Web do Serviço de Aplicativo na região Leste dos EUA do Azure.
@@ -121,7 +121,7 @@ O exercício é composto pelas seguintes tarefas:
 1. No painel **Adicionar ponto de extremidade**, execute as seguintes ações:
 
    - Verifique se **ponto de extremidade do Azure** aparece na lista suspensa **Tipo**.
-   - Na caixa de texto **Nome**, insira **aplicativo Web DevOps Foundations – Europa Ocidental**.
+   - Na caixa de texto **Nome**, insira **`DevOps Foundations web app - West Europe`**.
    - Verifique se a caixa de seleção **Habilitar Ponto de Extremidade** está selecionada.
    - Na lista suspensa **Tipo de recurso de destino**, selecione **Serviço de Aplicativo**.
    - Na lista suspensa **Recurso de destino**, na seção **rg-eshoponweb-westeurope**, selecione o nome do aplicativo Web do Serviço de Aplicativo na região Oeste da Europa do Azure.
@@ -163,7 +163,7 @@ O exercício é composto pelas seguintes tarefas:
 
 ### Tarefa 1: Configurar o ambiente do Azure Chaos Studio
 
-1. Na guia navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **Chaos Studio** e, na lista de resultados, selecione **Chaos Studio**.
+1. Na guia navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **`Chaos Studio`** e, na lista de resultados, selecione **Chaos Studio**.
 1. Na página **Chaos Studio**, selecione **Destinos**.
 1. Na página **Chaos Studio \| Destinos**, selecione a instância do aplicativo Web do Serviço de Aplicativo do Azure no grupo de recursos **rg-eshoponweb-eastus** na região Leste dos EUA implantada no laboratório anterior.
 1. Na barra de ferramentas, selecione o cabeçalho da lista suspensa **Habilitar destinos** e, na lista suspensa, selecione **Habilitar destinos diretos do serviço (Todos os recursos)**.
@@ -173,14 +173,14 @@ O exercício é composto pelas seguintes tarefas:
 
 ### Tarefa 2: Implementar um experimento
 
-1. No portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **Chaos Studio** e, na lista de resultados, selecione **Chaos Studio**.
+1. No portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **`Chaos Studio`** e, na lista de resultados, selecione **Chaos Studio**.
 1. Na página **Chaos Studio**, selecione **Experimentos**.
 1. Na página **Experimentos**, selecione **+ Criar** e, na lista suspensa, selecione **Novo experimento**.
 1. Na guia **Noções básicas** da página **Criar um experimento**, execute as seguintes ações:
 
    - Verifique se sua assinatura do Azure aparece na lista suspensa **Assinatura**.
-   - Selecione o link **Criar novo** abaixo da lista suspensa **Grupo de Recursos**, na caixa de texto **Nome**, insira **devops-foundations-rg**e selecione **OK**.
-   - Na seção **Detalhes do experimento**, na caixa de texto **Nome**, insira **DevOps_Foundations_Labs_Experiment_01**.
+   - Clique no link **Criar novo** abaixo da lista suspensa **Grupo de Recursos**; na caixa de texto **Nome**, insira **`rg-devops-foundations`** e clique em **OK**.
+   - Na seção **Detalhes do experimento**, na caixa de texto **Nome**, insira **`DevOps_Foundations_Labs_Experiment_01`**.
    - Na lista suspensa **Região**, selecione a região do Azure **Oeste da Europa**.
 
    > **Observação:** Você pode escolher qualquer região do Azure, mas considerando que está testando falhas em um recurso na região Oeste da Europa, qualquer região que não seja o Leste dos EUA parece mais apropriada.
@@ -189,8 +189,8 @@ O exercício é composto pelas seguintes tarefas:
 1. Na guia **Permissões**, aceite a opção padrão **Identidade atribuída pelo sistema** e selecione **Avançar: Designer de experimentos >**.
 1. Na guia **Designer de Experimentos**, execute as seguintes ações:
 
-   - Na caixa de texto **Etapa**, insira **Etapa 1: Failover de um aplicativo Web do Serviço de Aplicativo**.
-   - Na caixa de texto **Branch**, insira **Branch 1: Emular uma falha do Serviço de Aplicativo**.
+   - Na caixa de texto **Etapa**, insira **`Step 1: Failover an App Service web app`**.
+   - Na caixa de texto **Ramificação**, insira **`Branch 1: Emulate an App Service failure`**.
    - Selecione **+ Adicionar ação** e, na lista suspensa, selecione **Adicionar falha**.
 
 1. Na guia **Detalhes de falha** do painel **Adicionar falha**, na lista suspensa **Falhas**, selecione **Parar Serviço de Aplicativo** e defina o valor de **Duração (minutos)** como 10.
@@ -203,7 +203,7 @@ O exercício é composto pelas seguintes tarefas:
 
    > **Observação:** Para que o experimento seja bem-sucedido, você também precisa conceder permissões de conta de serviço gerenciada recém-criadas suficientes para interromper o aplicativo Web do Serviço de Aplicativo do Azure. Aproveitaremos para essa finalidade a função de Colaborador interno do Azure, mas você poderá criar uma função personalizada se quiser seguir o princípio de privilégios mínimos.
 
-1. No portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **Serviços de Aplicativos** e selecione **Serviços de Aplicativos** na lista de resultados.
+1. No portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **`App Services`** e selecione **Serviços de Aplicativos** na lista de resultados.
 1. Na página **Serviços de Aplicativo**, selecione o aplicativo Web do Serviço de Aplicativo do Azure na região Leste dos EUA que você implantou no laboratório anterior.
 1. Na página do aplicativo Web, no menu vertical no lado esquerdo, selecione **Controle de acesso (IAM)**.
 1. Na página **IAM (controle de acesso)** do aplicativo Web, selecione **+ Adicionar** e, na lista suspensa, selecione **Adicionar atribuição de função**.
@@ -249,10 +249,10 @@ O exercício é composto pelas seguintes tarefas:
 
 Neste exercício, você removerá os recursos usados nos laboratórios.
 
-1. Na guia navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **grupos de recursos** e, na lista de resultados, selecione **Grupos de recursos**.
+1. Na guia navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **`Resource groups`** e, na lista de resultados, selecione **Grupos de recursos**.
 1. Na página **Grupos de recursos**, na lista de grupos de recursos, selecione o grupo de recursos que você criou no laboratório atual.
 1. Na página Grupo de recursos, selecione **Excluir grupo de recursos**.
-1. Na caixa de texto **Insira o nome do grupo de recursos para confirmar a exclusão**, insira o nome do grupo de recursos que você está prestes a excluir e selecione **Excluir**.
+1. Na caixa de texto **Inserir nome do grupo de recursos para confirmar a exclusão**, insira o nome do grupo de recursos que você está prestes a excluir e clique em **Excluir**.
 
    > **Observação:** Aguarde até que o grupo de recursos seja excluído. Isso deve levar menos de um minuto.
 

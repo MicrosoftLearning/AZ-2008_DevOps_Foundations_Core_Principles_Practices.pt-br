@@ -27,7 +27,7 @@ Neste laboratório, você vai:
 
 - Concluído [Laboratório 01 – Planejamento e Gerenciamento do Agile com o GitHub](01-agile-planning-management-using-github.md)
 - Concluído [Laboratório 02 – Implementar o fluxo de trabalho com o GitHub](02-implement-manage-repositories-using-github.md)
-- Uma assinatura do Azure na qual você tenha pelo menos o acesso de nível Colaborador. Se você não tiver uma assinatura do Azure, poderá se inscrever para uma [avaliação gratuita](https://azure.microsoft.com/free).
+- Uma assinatura do Azure na qual você tenha pelo menos o acesso de nível Colaborador. Se não tiver uma assinatura do Azure, você poderá [inscrever-se em uma avaliação gratuita](https://azure.microsoft.com/free).
 
 ## Exercício 0: preparar a assinatura do Azure para o laboratório
 
@@ -37,7 +37,7 @@ Neste laboratório, você vai:
 
 1. Inicie um navegador da Web e navegue até o portal do Azure em `https://portal.azure.com`.
 1. Se solicitado, entre usando sua conta do Microsoft Entra ID com o acesso do Proprietário à assinatura do Azure disponível para você.
-1. Na guia navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **Assinaturas** e, na lista de resultados, selecione **Assinaturas**.
+1. Na guia navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **`Subscriptions`** e, na lista de resultados, selecione **Assinaturas**.
 1. Na página **Assinaturas**, selecione a assinatura que você deseja usar nesse laboratório.
 1. Na página assinaturas, no menu vertical à esquerda, selecione **Provedores de recursos**.
 1. Na lista de provedores de recursos, pesquise e selecione **Microsoft.CloudShell**.
@@ -59,7 +59,7 @@ O exercício é composto pelas seguintes tarefas:
 
 ### Tarefa 1: Bifurque e examine o repositório GitHub que contém o código-fonte de um aplicativo Web, um fluxo de trabalho do GitHub Actions e um modelo Bicep
 
-1. Alterne para a janela do navegador exibindo sua conta do GitHub e verifique se você ainda está autenticado (caso contrário, entre usando sua conta de usuário do GitHub).
+1. Alterne para a janela do navegador exibindo sua conta do GitHub e verifique se a autenticação ainda está ativa (caso contrário, entre usando sua conta de usuário do GitHub).
 1. Abra outra guia na mesma janela do navegador e navegue até o repositório [eShopOnWeb](https://github.com/MicrosoftLearning/eShopOnWeb), que hospeda a versão do .NET de um site de exemplo, um fluxo de trabalho do GitHub Actions e um modelo Bicep.
 1. Na página de repositório **eShopOnWeb**, selecione **Bifurcação**.
 1. Na página **Criar uma bifurcação**, verifique se a entrada da lista suspensa **Proprietário** exibe seu nome de usuário do GitHub, aceite a entrada padrão **eShopOnWeb** na caixa de texto **Nome do repositório**, confirme **Copiar somente a ramificação principal** habilitada e escolha **Criar bifurcação**.
@@ -73,7 +73,7 @@ O exercício é composto pelas seguintes tarefas:
    - o diretório **infra** que contém o modelo Bicep chamado **webapp.bicep**
    - o diretório **src/Web** que contém o código .NET do aplicativo Web de origem
 
-1. Abra o diretório **.github/workflows** e selecione o arquivo **eshoponweb-cicd.yml** para exibir seu conteúdo. Observe que este fluxo de trabalho do GitHub Actions contém os trabalhos de **buildandtest** e **implantação**, que consistem nas seguintes etapas:
+1. Abra o diretório **.github/workflows** e selecione o arquivo **eshoponweb-cicd.yml** para exibir seu conteúdo. Este fluxo de trabalho do GitHub Actions contém os trabalhos **buildandtest** e **implantação**, que consistem nas seguintes etapas:
 
    - buildandtest
       - fazer check-out do repositório
@@ -94,7 +94,7 @@ O exercício é composto pelas seguintes tarefas:
 
    > **Observação:** Você precisará criar o grupo de recursos antes de executar o fluxo de trabalho.
 
-1. Observe que o fluxo de trabalho depende de um segredo para se autenticar na assinatura do Azure de destino durante a etapa Configurar a CLI do Azure, conforme evidenciado pela instrução `creds: ${{ secrets.AZURE_CREDENTIALS }}`.
+1. O fluxo de trabalho depende de um segredo para se autenticar na assinatura do Azure de destino durante a etapa Configurar a CLI do Azure, conforme evidenciado pela instrução `creds: ${{ secrets.AZURE_CREDENTIALS }}`.
 
    > **Observação:** Você precisará configurar esse segredo antes de executar o fluxo de trabalho.
 
@@ -105,13 +105,13 @@ O exercício é composto pelas seguintes tarefas:
 > **Observação:** Você começará criando os grupos de recursos. Você executará o fluxo de trabalho duas vezes para implantar duas instâncias do site em duas regiões diferentes do Azure.
 
 1. Alterne para a guia do navegador da Web que está exibindo o portal do Azure em `https://portal.azure.com`.
-1. No portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **Grupos de recursos** e selecione **Grupos de recursos** na lista de resultados.
+1. No portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **`Resource groups`** e selecione **Grupos de recursos** na lista de resultados.
 1. Na página **Grupos de recursos**, selecione **+ Criar**.
-1. Na caixa de texto **Grupos de recursos**, insira **rg-eshoponweb-westeurope**.
+1. Na caixa de texto **Grupos de recursos**, insira **`rg-eshoponweb-westeurope`**.
 1. Na lista suspensa **Região**, selecione **(Europa) Europa Ocidental**.
 1. Selecione **Examinar + criar** e, em seguida, em **Revisar + criar**, selecione **Criar**.
 1. Na página **Grupos de recursos**, selecione **+ Criar**.
-1. Na caixa de texto **Grupos de recursos**, insira **rg-eshoponweb-eastus**.
+1. Na caixa de texto **Grupos de recursos**, insira **`rg-eshoponweb-eastus`**.
 1. Na lista suspensa **Região**, selecione **Leste dos EUA**.
 1. Selecione **Examinar + criar** e, em seguida, em **Revisar + criar**, selecione **Criar**.
 
@@ -122,18 +122,18 @@ O exercício é composto pelas seguintes tarefas:
 1. Na sessão Bash no painel do Cloud Shell, execute o seguinte comando para armazenar o valor da ID da assinatura do Azure em uma variável:
 
    ```cli
-   SUBCRIPTION_ID=$(az account show --query id --output tsv) 
-   echo $SUBCRIPTION_ID
+   SUBSCRIPTION_ID=$(az account show --query id --output tsv) 
+   echo $SUBSCRIPTION_ID
    ```
 
-1. Copie o valor da ID da Assinatura retornada pelo segundo comando e registre-o. Você precisará dele posteriormente no exercício.
+1. Copie o valor da ID da Assinatura retornada pelo segundo comando e registre-o. Você precisará dela posteriormente no exercício.
 1. Na sessão Bash no painel do Cloud Shell, execute o seguinte comando para criar uma entidade de serviço do Microsoft Entra ID e atribuir a ela a função de Colaborador no escopo da assinatura:
 
    ```cli
-   az ad sp create-for-rbac --name "devopsfoundationslabsp" --role contributor --scopes /subscriptions/$SUBCRIPTION_ID --json-auth
+   az ad sp create-for-rbac --name "devopsfoundationslabsp" --role contributor --scopes /subscriptions/$SUBSCRIPTION_ID --json-auth
    ```
 
-1. Copie toda a saída formatada em JSON do comando e registre-a. Você precisará dele em breve. A saída deve ter o formato semelhante ao seguinte texto:
+1. Copie toda a saída formatada em JSON do comando e registre-a. Você precisará dela em breve. A saída deve ter o formato semelhante ao seguinte texto:
 
    ```json
    {
@@ -153,16 +153,16 @@ O exercício é composto pelas seguintes tarefas:
 1. Alterne para a janela do navegador da Web exibindo a página dp repositório bifucrado do GitHub do **eShopOnWeb** bifurcada e, na barra de ferramentas, selecione **Configurações**.
 1. No menu vertical à esquerda, na seção **Segurança**, selecione **Segredos e variáveis** e, na lista suspensa, selecione **Ações**.
 1. Na página **Segredos e variáveis da ação**, selecione **Novo segredo do repositório**.
-1. Na página **Segredos/novo segredo das ações**, na caixa de texto **Nome**, digite **AZURE_CREDENTIALS**.
+1. No painel **Segredos/novo segredo das ações**, na caixa de texto **Nome**, insira **`AZURE_CREDENTIALS`**.
 1. Na caixa de texto **Segredo**, cole o texto formatado em JSON que você registrou anteriormente nesta tarefa e selecione **Adicionar segredo**.
-1. Volte para o navegador da Web exibindo a sessão Bash no painel do Cloud Shell e execute o seguinte comando para gerar o nome do primeiro aplicativo Web do Serviço de Aplicativo que você implantará:
+1. Volte para o navegador da Web exibindo a sessão do Bash no painel do Cloud Shell e execute o seguinte comando para gerar o nome do primeiro aplicativo Web do Serviço de Aplicativo que você implantará:
 
    ```cli
    echo devops-webapp-westeurope-$RANDOM$RANDOM
    ```
 
 1. Copie o valor retornado pelo comando e registre-o. Você o usará posteriormente neste exercício.
-1. Na sessão Bash no painel do Cloud Shell, execute o seguinte comando para gerar o nome do segundo aplicativo Web do Serviço de Aplicativo que você implantará:
+1. Na sessão do Bash no painel do Cloud Shell, execute o seguinte comando para gerar o nome do segundo aplicativo Web do Serviço de Aplicativo que você implantará:
 
    ```cli
    echo devops-webapp-eastus-$RANDOM$RANDOM
@@ -202,7 +202,7 @@ O exercício é composto pelas seguintes tarefas:
 
 1. No painel **infra/webapp.bicep**, selecione **Confirmar alterações** e selecione **Confirmar alterações** novamente.
 1. Na janela do navegador da Web exibindo a página do repositório bifurcado do GitHub do **eShopOnWeb**, selecione **Ações**.
-1. Se for solicitado que você habilite o GitHub Actions, selecione **Eu entendo meus fluxos de trabalho, vá em frente e habilite-os**.
+1. Se for solicitado que você habilite o GitHub Actions, clique em **Eu entendo meus fluxos de trabalho, vá em frente e habilite-os**.
     >**Observação**: Isso é esperado, pois, por padrão, o GitHub desabilitará fluxos de trabalho em um repositório bifurcado para sua própria proteção.
 1. Na seção **Todos os fluxos de trabalho** no lado esquerdo, selecione **Compilação e Teste do eShopOnWeb**.
 1. No painel **Compilação e Teste do eShopOnWeb**, selecione **Executar fluxo de trabalho**, na lista suspensa, confirme se a opção **Ramificação: principal** está selecionada e selecione **Executar fluxo de trabalho** novamente.
@@ -245,7 +245,7 @@ O exercício é composto pelas seguintes tarefas:
 
     >**Observação**: Caso alguma das etapas falhe, na mesma página que exibe o progresso do fluxo de trabalho, no canto superior direito, selecione **Executar novamente todos os trabalhos** e, no painel **Executar novamente todos os trabalhos**, selecione **Executar trabalhos**novamente.
 
-1. Na janela do navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira os **Serviços de Aplicativos** e selecione **Serviços de Aplicativos** na lista de resultados.
+1. Na janela do navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **`App Services`** e selecione **Serviços de Aplicativos** na lista de resultados.
 1. Na página **Serviços de Aplicativos**, na lista de Serviços de Aplicativo, selecione o serviço **devops-webapp-westeurope-app** criado anteriormente neste exercício.
 1. Na página **devops-webapp-westeurope**, na seção **Essentials**, verifique se o valor de **domínio Padrão** é exibido e selecione-o para abrir o aplicativo Web em uma nova guia do navegador.
 1. Na nova guia do navegador, verifique se o aplicativo Web é exibido e se ele está funcional. Você também pode verificar o segundo aplicativo Web na região **Leste dos EUA** da mesma maneira.
