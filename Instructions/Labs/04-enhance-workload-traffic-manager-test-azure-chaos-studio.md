@@ -61,7 +61,7 @@ O exercício é composto pelas seguintes tarefas:
 ### Tarefa 1: Implementar um perfil do Gerenciador de Tráfego
 
 1. Na guia navegador da Web que exibe o portal do Azure, na caixa de texto de pesquisa na parte superior da página, insira **`Traffic Manager profiles`** e, na lista de resultados, selecione **perfis do Gerenciador de Tráfego**.
-1. Na página **Balanceamento de Carga \| Gerenciador de Tráfego**, selecione **+ Criar**.
+1. Na página **Serviços de Balanceamento de Carga \| Gerenciador de Tráfego**, selecione **+ Criar**.
 1. Na página **Criar perfil do Gerenciador de Tráfego**, execute as seguintes ações:
 
    - Na caixa de texto **Nome**, insira **`devopsfoundationstmprofile`**.
@@ -80,7 +80,7 @@ O exercício é composto pelas seguintes tarefas:
 
    > **Observação**: aguarde até que a implantação seja concluída. Isso deve ser concluído em um minuto.
 
-1. Na página **Balanceamento de Carga \| Gerenciador de Tráfego**, se necessário, selecione **Atualizar** e então selecione **devopsfoundationstmprofile**.
+1. Na página **Serviços de Balanceamento de Carga \| Gerenciador de Tráfego**, se necessário, selecione **Atualizar** e **devopsfoundationstmprofile**.
 1. Na página **devopsfoundationstmprofile**, na seção **Essentials**, copie o valor da configuração **nome DNS** e registre-o. Você vai precisar dele durante este laboratório.
 1. Na página **devopsfoundationstmprofile**, no menu de navegação à esquerda, na seção **Configurações**, selecione **Configuração**.
 1. Examine o conteúdo da página **devopsfoundationstmprofile \| Configuração**. Observe que, por padrão, o **TTL (tempo de vida útil) do DNS** é definido como **60** segundos. Altere o valor para **5** segundos.

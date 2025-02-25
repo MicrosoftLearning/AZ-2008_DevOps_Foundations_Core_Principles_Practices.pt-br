@@ -229,6 +229,7 @@ O exercício é composto pelas seguintes tarefas:
     RESOURCE-GROUP: rg-eshoponweb-eastus
    ```
 
+1. No painel **Editar**, substitua a variável `location` na linha 9 pela região mais próxima de sua localização. 
 1. No painel **Editar**, substitua o espaço reservado `eshoponweb-webapp-NAME` na linha 11 pelo nome do **segundo** aplicativo Web do Serviço de Aplicativo do Azure gerado anteriormente neste exercício.
 1. No painel **.github/fluxos de trabalho/eshoponweb-cicd.yml**, selecione **Confirmar alterações** e selecione **Confirmar alterações** novamente.
 1. Na janela do navegador da Web exibindo a página do repositório bifurcado do GitHub do **eShopOnWeb**, selecione **Ações**.
