@@ -69,14 +69,14 @@ O exercício é composto pelas seguintes tarefas:
    - Na caixa de texto **Data de conclusão (opcional)**, insira uma data uma semana após a data atual.
    - Insira **`Completion of the alpha release`** na caixa de texto descrição **Descrição**.
 
-1. Selecione **Criar marco de referência**.
+1. Selecione **Novo marco**.
 1. Repita as últimas três etapas para criar um marco de referência de **versão beta** com a data de conclusão duas semanas após a data atual. Insira **`Completion of the beta release`** na caixa de texto **Descrição**.
 1. Navegue de volta para a página **Problemas** e selecione **Novo problema**.
 1. Na caixa de texto **Adicionar título**, insira **`Repo README page is empty`**.
 1. Na caiax de texto **Adicionar descrição**, insira **`Brevity might be a virtue, but this README page can really use some text`**.
 1. Selecione o ícone de engrenagem ao lado da entrada **Marco de Referência** e, na lista suspensa, selecione **versão alfa**.
 1. Selecione o ícone de engrenagem ao lado da entrada **Rótulos** e, na lista suspensa, selecione **bug**.
-1. Selecione **Enviar novo problema**. Observe que o **n.º 1** foi atribuído ao problema automaticamente.
+1. Selecione **Criar**. Observe que o **n.º 1** foi atribuído ao problema automaticamente.
 
 ### Tarefa 3: Criar um projeto do GitHub
 
@@ -158,7 +158,7 @@ O exercício é composto pelas seguintes tarefas:
    > **Observação:** Agora, você vai adicionar outro rascunho de item e convertê-lo em um problema.
 
 1. Na página **Projeto de Introdução de Itens Básicos do DevOps**, na coluna **Pendentes**, selecione **+ Adicionar item**.
-1. Na caixa de texto, insira **`Additional collaborators needed`** e pressione **Enter** no teclado. Isso adicionará um novo rascunho de item à coluna **Pendentes**.
+1. Na caixa de texto, insira **`Additional collaborators needed`** e pressione **CTRL + Enter** no teclado. Isso adicionará um novo rascunho de item à coluna **Pendentes**.
 1. No rascunho de item recém-adicionado, clique no símbolo de reticências; no menu suspenso, clique em **Converter em um problema** e selecione **DevOpsCoreIntroRepo** para adicionar o item ao repositório.
 
 ### Tarefa 2: Adicionar um item baseado em um problema
