@@ -82,7 +82,8 @@ O exercício é composto pelas seguintes tarefas:
 1. No painel atual, na seção Destinatários, selecione **Adicionar destinatários…** e, na seção **Sugestões**, escolha o nome de usuário do GitHub.
 1. Selecione o ícone de engrenagem ao lado da entrada **Rótulos** e, na lista suspensa, selecione **aprimoramento**.
 1. Selecione o ícone de engrenagem ao lado da entrada **Projetos** e, na lista suspensa, escolha **Projeto de Introdução do DevOps Core**.
-1. Selecione **Enviar novo problema**.
+1. Clique em **Criar** para salvar o novo problema.
+1. Abra o novo problema novamente.
 1. No painel **O index.html parece bem simples**, na seção **Projetos**, defina **Status** como **Em andamento**.
 1. Na página **Spoon-Knife** com fork, selecione a guia **Projetos**.
 1. Na página **Boas-vindas aos novos projetos**, escolha **Projeto de Introdução do DevOps Core**.
