@@ -146,7 +146,7 @@ O exercício é composto pelas seguintes tarefas:
 
    > **Observação:** Na caixa de texto exibida automaticamente, você pode começar a digitar para criar um rascunho ou digitar **#** para mencionar um problema existente em qualquer repositório do GitHub. Começaremos com a primeira dessas duas técnicas.
 
-1. Na caixa de texto, insira **`Missing Wiki`** and e pressione **Enter** no teclado. Isso adicionará um novo rascunho de item à coluna **Pendentes**.
+1. Na caixa de texto, insira **`Missing Wiki`** e pressione **Ctrl + Enter** no teclado. Isso adicionará um novo rascunho de item à coluna **Pendentes**.
 1. No rascunho de item recém-adicionado, selecione o símbolo de reticências e, no menu suspenso, selecione **Converter em um problema**.
 1. Na lista suspensa **Selecionar um item**, selecione **DevOpsCoreIntroRepo** para adicionar o item ao repositório criado no exercício anterior. Observe que o problema foi rotulado automaticamente com **n.° 2**.
 1. Selecione o problema **Wiki ausente**.
