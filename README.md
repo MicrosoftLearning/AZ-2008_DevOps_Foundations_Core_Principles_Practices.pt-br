@@ -1,10 +1,7 @@
-#README
+> ⚠️ **Aviso**  
+> Este repositório será **arquivado em 14 de novembro de 2025**.  
+> O novo repositório para laboratórios de DevOps pode ser encontrado aqui: [MicrosoftLearning/mslearn-devops](https://github.com/MicrosoftLearning/mslearn-devops)
 
-We've turned off the ability to report issues directly on this repo and do not monitor PRs.
-
-Provide feedback here: https://aka.ms/provide-feedback
-
-Or, if you are a trainer with a microsoft.com email address, please create a ticket in AzDO.
 
 # AZ-2008: Fundamentos de DevOps: Os Princípios e Práticas Fundamentais
 
